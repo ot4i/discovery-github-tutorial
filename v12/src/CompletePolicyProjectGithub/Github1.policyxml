@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <policies>
-  <policy policyType="github" policyName="Github1" policyTemplate="online_v1_basic">
-    <credentialName>CompletePolicyProjectGithub_Github1</credentialName>
-    <applicationVersion>v1</applicationVersion>
+  <policy policyType="github" policyName="GitHub1" policyTemplate="online_v1_basic">
     <applicationType>online</applicationType>
+    <applicationVersion>v1</applicationVersion>
     <authenticationMethod>BASIC</authenticationMethod>
-    <endpointUrl>REPLACE_WITH_YOUR_ENDPOINT_URL</endpointUrl>
+    <credentialName>CompletePolicyProjectGitHub_GitHub1</credentialName>
+    <endpointUrl>&lt;endpointurl value&gt;</endpointUrl>
   </policy>
 </policies>

@@ -1,0 +1,859 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "items": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "displayOrder": 1,
+        "title": "Title",
+        "description": "The title of the issue",
+        "type": "string"
+      },
+      "body": {
+        "displayOrder": 2,
+        "title": "Description",
+        "description": "The description of the issue",
+        "type": "string"
+      },
+      "milestone1": {
+        "displayOrder": 6,
+        "title": "Milestone",
+        "description": "The milestone to associate with the issue",
+        "type": "object",
+        "properties": {
+          "url": {
+            "displayOrder": 1,
+            "title": "URL",
+            "type": "string"
+          },
+          "html_url": {
+            "displayOrder": 2,
+            "title": "HTML URL",
+            "type": "string"
+          },
+          "labels_url": {
+            "displayOrder": 3,
+            "title": "Labels URL",
+            "type": "string"
+          },
+          "id": {
+            "displayOrder": 4,
+            "title": "ID",
+            "type": "number"
+          },
+          "node_id": {
+            "displayOrder": 5,
+            "title": "Node ID",
+            "type": "string"
+          },
+          "number": {
+            "displayOrder": 6,
+            "title": "Number",
+            "description": "The number of the milestone",
+            "type": "number"
+          },
+          "state": {
+            "displayOrder": 7,
+            "title": "State",
+            "description": "The state of the milestone",
+            "enum": [
+              "open",
+              "closed"
+            ],
+            "type": "string"
+          },
+          "title": {
+            "displayOrder": 8,
+            "title": "Title",
+            "description": "The title of the milestone",
+            "type": "string"
+          },
+          "description": {
+            "displayOrder": 9,
+            "title": "Description",
+            "type": "string"
+          },
+          "creator": {
+            "displayOrder": 10,
+            "title": "Creator",
+            "type": "object",
+            "properties": {
+              "name": {
+                "displayOrder": 1,
+                "title": "Name",
+                "type": "string"
+              },
+              "email": {
+                "displayOrder": 2,
+                "title": "Email",
+                "type": "string"
+              },
+              "login": {
+                "displayOrder": 3,
+                "title": "Login",
+                "type": "string"
+              },
+              "id": {
+                "displayOrder": 4,
+                "title": "ID",
+                "type": "number"
+              },
+              "node_id": {
+                "displayOrder": 5,
+                "title": "Node ID",
+                "type": "string"
+              },
+              "avatar_url": {
+                "displayOrder": 6,
+                "title": "Avatar URL",
+                "type": "string"
+              },
+              "gravatar_id": {
+                "displayOrder": 7,
+                "title": "Gravatar ID",
+                "type": "string"
+              },
+              "url": {
+                "displayOrder": 8,
+                "title": "URL",
+                "type": "string"
+              },
+              "html_url": {
+                "displayOrder": 9,
+                "title": "Html URL",
+                "type": "string"
+              },
+              "followers_url": {
+                "displayOrder": 10,
+                "title": "Followers URL",
+                "type": "string"
+              },
+              "following_url": {
+                "displayOrder": 11,
+                "title": "Following URL",
+                "type": "string"
+              },
+              "gists_url": {
+                "displayOrder": 12,
+                "title": "Gists URL",
+                "type": "string"
+              },
+              "starred_url": {
+                "displayOrder": 13,
+                "title": "Starred URL",
+                "type": "string"
+              },
+              "subscriptions_url": {
+                "displayOrder": 14,
+                "title": "Subscriptions URL",
+                "type": "string"
+              },
+              "organizations_url": {
+                "displayOrder": 15,
+                "title": "Organizations URL",
+                "type": "string"
+              },
+              "repos_url": {
+                "displayOrder": 16,
+                "title": "Repos URL",
+                "type": "string"
+              },
+              "events_url": {
+                "displayOrder": 17,
+                "title": "Events URL",
+                "type": "string"
+              },
+              "received_events_url": {
+                "displayOrder": 18,
+                "title": "Received events URL",
+                "type": "string"
+              },
+              "type1": {
+                "displayOrder": 19,
+                "title": "Type",
+                "type": "string"
+              },
+              "site_admin": {
+                "displayOrder": 20,
+                "title": "Site admin",
+                "type": "boolean"
+              },
+              "starred_at": {
+                "displayOrder": 21,
+                "title": "Starred at",
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          },
+          "open_issues": {
+            "displayOrder": 11,
+            "title": "Open issues",
+            "type": "number"
+          },
+          "closed_issues": {
+            "displayOrder": 12,
+            "title": "Closed issues",
+            "type": "number"
+          },
+          "created_at": {
+            "displayOrder": 13,
+            "title": "Created at",
+            "type": "string",
+            "format": "date-time"
+          },
+          "updated_at": {
+            "displayOrder": 14,
+            "title": "Updated at",
+            "type": "string",
+            "format": "date-time"
+          },
+          "closed_at": {
+            "displayOrder": 15,
+            "title": "Closed at",
+            "type": "string",
+            "format": "date-time"
+          },
+          "due_on": {
+            "displayOrder": 16,
+            "title": "Due on",
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "labels1": {
+        "displayOrder": 7,
+        "title": "Labels",
+        "description": "Labels to associate with the issue",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "displayOrder": 1,
+              "title": "ID",
+              "type": "number"
+            },
+            "node_id": {
+              "displayOrder": 2,
+              "title": "Node ID",
+              "type": "string"
+            },
+            "url": {
+              "displayOrder": 3,
+              "title": "URL",
+              "description": "The URL for the label",
+              "type": "string"
+            },
+            "name": {
+              "displayOrder": 4,
+              "title": "Name",
+              "description": "The name of the label",
+              "type": "string"
+            },
+            "description": {
+              "displayOrder": 5,
+              "title": "Description",
+              "type": "string"
+            },
+            "color": {
+              "displayOrder": 6,
+              "title": "Color",
+              "description": "The 6-character hex code, without specifying the prefix #, to identify the color",
+              "type": "string"
+            },
+            "default": {
+              "displayOrder": 7,
+              "title": "Default",
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalItems": false
+      },
+      "assignees1": {
+        "displayOrder": 8,
+        "title": "Assignees",
+        "description": "The GitHub users to whom the issue should be assigned",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "displayOrder": 1,
+              "title": "Name",
+              "type": "string"
+            },
+            "email": {
+              "displayOrder": 2,
+              "title": "Email",
+              "type": "string"
+            },
+            "login": {
+              "displayOrder": 3,
+              "title": "Login",
+              "type": "string"
+            },
+            "id": {
+              "displayOrder": 4,
+              "title": "ID",
+              "type": "number"
+            },
+            "node_id": {
+              "displayOrder": 5,
+              "title": "Node ID",
+              "type": "string"
+            },
+            "avatar_url": {
+              "displayOrder": 6,
+              "title": "Avatar URL",
+              "type": "string"
+            },
+            "gravatar_id": {
+              "displayOrder": 7,
+              "title": "Gravatar ID",
+              "type": "string"
+            },
+            "url": {
+              "displayOrder": 8,
+              "title": "URL",
+              "type": "string"
+            },
+            "html_url": {
+              "displayOrder": 9,
+              "title": "HTML URL",
+              "type": "string"
+            },
+            "followers_url": {
+              "displayOrder": 10,
+              "title": "Followers URL",
+              "type": "string"
+            },
+            "following_url": {
+              "displayOrder": 11,
+              "title": "Following URL",
+              "type": "string"
+            },
+            "gists_url": {
+              "displayOrder": 12,
+              "title": "Gists URL",
+              "type": "string"
+            },
+            "starred_url": {
+              "displayOrder": 13,
+              "title": "Starred URL",
+              "type": "string"
+            },
+            "subscriptions_url": {
+              "displayOrder": 14,
+              "title": "Subscriptions URL",
+              "type": "string"
+            },
+            "organizations_url": {
+              "displayOrder": 15,
+              "title": "Organizations URL",
+              "type": "string"
+            },
+            "repos_url": {
+              "displayOrder": 16,
+              "title": "Repos URL",
+              "type": "string"
+            },
+            "events_url": {
+              "displayOrder": 17,
+              "title": "Events URL",
+              "type": "string"
+            },
+            "received_events_url": {
+              "displayOrder": 18,
+              "title": "Received events URL",
+              "type": "string"
+            },
+            "type1": {
+              "displayOrder": 19,
+              "title": "Type",
+              "type": "string"
+            },
+            "site_admin": {
+              "displayOrder": 20,
+              "title": "Site admin",
+              "type": "boolean"
+            },
+            "starred_at": {
+              "displayOrder": 21,
+              "title": "Starred at",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "additionalItems": false
+      },
+      "state": {
+        "displayOrder": 9,
+        "title": "Issue status",
+        "description": "The state of the issue. The possible values are open, closed, or all.",
+        "enum": [
+          "open",
+          "closed"
+        ],
+        "type": "string"
+      },
+      "id": {
+        "displayOrder": 18,
+        "title": "ID",
+        "type": "number"
+      },
+      "node_id": {
+        "displayOrder": 19,
+        "title": "Node ID",
+        "type": "string"
+      },
+      "url": {
+        "displayOrder": 20,
+        "title": "URL",
+        "description": "The URL for the label",
+        "type": "string"
+      },
+      "repository_url": {
+        "displayOrder": 21,
+        "title": "Repository URL",
+        "type": "string"
+      },
+      "labels_url": {
+        "displayOrder": 22,
+        "title": "Labels URL",
+        "type": "string"
+      },
+      "comments_url": {
+        "displayOrder": 23,
+        "title": "Comments URL",
+        "type": "string"
+      },
+      "events_url": {
+        "displayOrder": 24,
+        "title": "Events URL",
+        "type": "string"
+      },
+      "html_url": {
+        "displayOrder": 25,
+        "title": "HTML URL",
+        "type": "string"
+      },
+      "number": {
+        "displayOrder": 3,
+        "title": "Issue number",
+        "description": "The unique number that identifies the issue within its repository",
+        "type": "number"
+      },
+      "state_reason": {
+        "displayOrder": 27,
+        "title": "Status reason",
+        "description": "The reason for the current state",
+        "enum": [
+          "completed",
+          "not_planned",
+          "reopened"
+        ],
+        "type": "string"
+      },
+      "closed_by": {
+        "displayOrder": 28,
+        "title": "Closed by",
+        "description": " ",
+        "type": "object",
+        "properties": {
+          "name": {
+            "displayOrder": 1,
+            "title": "Name",
+            "type": "string"
+          },
+          "email": {
+            "displayOrder": 2,
+            "title": "Email",
+            "type": "string"
+          },
+          "login": {
+            "displayOrder": 3,
+            "title": "Login",
+            "type": "string"
+          },
+          "id": {
+            "displayOrder": 4,
+            "title": "ID",
+            "type": "number"
+          },
+          "node_id": {
+            "displayOrder": 5,
+            "title": "Node ID",
+            "type": "string"
+          },
+          "avatar_url": {
+            "displayOrder": 6,
+            "title": "Avatar URL",
+            "type": "string"
+          },
+          "gravatar_id": {
+            "displayOrder": 7,
+            "title": "Gravatar ID",
+            "type": "string"
+          },
+          "url": {
+            "displayOrder": 8,
+            "title": "URL",
+            "type": "string"
+          },
+          "html_url": {
+            "displayOrder": 9,
+            "title": "HTML URL",
+            "type": "string"
+          },
+          "followers_url": {
+            "displayOrder": 10,
+            "title": "Followers URL",
+            "type": "string"
+          },
+          "following_url": {
+            "displayOrder": 11,
+            "title": "Following URL",
+            "type": "string"
+          },
+          "gists_url": {
+            "displayOrder": 12,
+            "title": "Gists URL",
+            "type": "string"
+          },
+          "starred_url": {
+            "displayOrder": 13,
+            "title": "Starred URL",
+            "type": "string"
+          },
+          "subscriptions_url": {
+            "displayOrder": 14,
+            "title": "Subscriptions URL",
+            "type": "string"
+          },
+          "organizations_url": {
+            "displayOrder": 15,
+            "title": "Organizations URL",
+            "type": "string"
+          },
+          "repos_url": {
+            "displayOrder": 16,
+            "title": "Repos URL",
+            "type": "string"
+          },
+          "events_url": {
+            "displayOrder": 17,
+            "title": "Events URL",
+            "type": "string"
+          },
+          "received_events_url": {
+            "displayOrder": 18,
+            "title": "Received events URL",
+            "type": "string"
+          },
+          "type1": {
+            "displayOrder": 19,
+            "title": "Type",
+            "type": "string"
+          },
+          "site_admin": {
+            "displayOrder": 20,
+            "title": "Site admin",
+            "type": "boolean"
+          },
+          "starred_at": {
+            "displayOrder": 21,
+            "title": "Starred at",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "locked": {
+        "displayOrder": 29,
+        "title": "Locked",
+        "type": "boolean"
+      },
+      "active_lock_reason": {
+        "displayOrder": 30,
+        "title": "Active lock reason",
+        "type": "string"
+      },
+      "comments": {
+        "displayOrder": 31,
+        "title": "Comments",
+        "type": "number"
+      },
+      "closed_at": {
+        "displayOrder": 33,
+        "title": "Closed at",
+        "type": "string",
+        "format": "date-time"
+      },
+      "created_at": {
+        "displayOrder": 34,
+        "title": "Created at",
+        "type": "string",
+        "format": "date-time"
+      },
+      "updated_at": {
+        "displayOrder": 35,
+        "title": "Updated at",
+        "type": "string",
+        "format": "date-time"
+      },
+      "author_association": {
+        "displayOrder": 42,
+        "title": "Author association",
+        "description": "The relation between the author and the repository",
+        "enum": [
+          "COLLABORATOR",
+          "CONTRIBUTOR",
+          "FIRST_TIMER",
+          "FIRST_TIME_CONTRIBUTOR",
+          "MANNEQUIN",
+          "MEMBER",
+          "NONE",
+          "OWNER"
+        ],
+        "type": "string"
+      },
+      "user": {
+        "displayOrder": 50,
+        "title": "User",
+        "description": " ",
+        "type": "object",
+        "properties": {
+          "name": {
+            "displayOrder": 1,
+            "title": "Name",
+            "type": "string"
+          },
+          "email": {
+            "displayOrder": 2,
+            "title": "Email",
+            "type": "string"
+          },
+          "login": {
+            "displayOrder": 3,
+            "title": "Login",
+            "type": "string"
+          },
+          "id": {
+            "displayOrder": 4,
+            "title": "ID",
+            "type": "number"
+          },
+          "node_id": {
+            "displayOrder": 5,
+            "title": "Node ID",
+            "type": "string"
+          },
+          "avatar_url": {
+            "displayOrder": 6,
+            "title": "Avatar URL",
+            "type": "string"
+          },
+          "gravatar_id": {
+            "displayOrder": 7,
+            "title": "Gravatar ID",
+            "type": "string"
+          },
+          "url": {
+            "displayOrder": 8,
+            "title": "URL",
+            "type": "string"
+          },
+          "html_url": {
+            "displayOrder": 9,
+            "title": "HTML URL",
+            "type": "string"
+          },
+          "followers_url": {
+            "displayOrder": 10,
+            "title": "Followers URL",
+            "type": "string"
+          },
+          "following_url": {
+            "displayOrder": 11,
+            "title": "Following URL",
+            "type": "string"
+          },
+          "gists_url": {
+            "displayOrder": 12,
+            "title": "Gists URL",
+            "type": "string"
+          },
+          "starred_url": {
+            "displayOrder": 13,
+            "title": "Starred URL",
+            "type": "string"
+          },
+          "subscriptions_url": {
+            "displayOrder": 14,
+            "title": "Subscriptions URL",
+            "type": "string"
+          },
+          "organizations_url": {
+            "displayOrder": 15,
+            "title": "Organizations URL",
+            "type": "string"
+          },
+          "repos_url": {
+            "displayOrder": 16,
+            "title": "Repos URL",
+            "type": "string"
+          },
+          "events_url": {
+            "displayOrder": 17,
+            "title": "Events URL",
+            "type": "string"
+          },
+          "received_events_url": {
+            "displayOrder": 18,
+            "title": "Received events URL",
+            "type": "string"
+          },
+          "type1": {
+            "displayOrder": 19,
+            "title": "Type",
+            "type": "string"
+          },
+          "site_admin": {
+            "displayOrder": 20,
+            "title": "Site admin",
+            "type": "boolean"
+          },
+          "starred_at": {
+            "displayOrder": 21,
+            "title": "Starred at",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "assignee1": {
+        "displayOrder": 55,
+        "title": "Assignee",
+        "type": "object",
+        "properties": {
+          "name": {
+            "displayOrder": 1,
+            "title": "Name",
+            "type": "string"
+          },
+          "email": {
+            "displayOrder": 2,
+            "title": "Email",
+            "type": "string"
+          },
+          "login": {
+            "displayOrder": 3,
+            "title": "Login",
+            "type": "string"
+          },
+          "id": {
+            "displayOrder": 4,
+            "title": "Id",
+            "type": "number"
+          },
+          "node_id": {
+            "displayOrder": 5,
+            "title": "Node id",
+            "type": "string"
+          },
+          "avatar_url": {
+            "displayOrder": 6,
+            "title": "Avatar url",
+            "type": "string"
+          },
+          "gravatar_id": {
+            "displayOrder": 7,
+            "title": "Gravatar id",
+            "type": "string"
+          },
+          "url": {
+            "displayOrder": 8,
+            "title": "Url",
+            "type": "string"
+          },
+          "html_url": {
+            "displayOrder": 9,
+            "title": "Html url",
+            "type": "string"
+          },
+          "followers_url": {
+            "displayOrder": 10,
+            "title": "Followers url",
+            "type": "string"
+          },
+          "following_url": {
+            "displayOrder": 11,
+            "title": "Following url",
+            "type": "string"
+          },
+          "gists_url": {
+            "displayOrder": 12,
+            "title": "Gists url",
+            "type": "string"
+          },
+          "starred_url": {
+            "displayOrder": 13,
+            "title": "Starred url",
+            "type": "string"
+          },
+          "subscriptions_url": {
+            "displayOrder": 14,
+            "title": "Subscriptions url",
+            "type": "string"
+          },
+          "organizations_url": {
+            "displayOrder": 15,
+            "title": "Organizations url",
+            "type": "string"
+          },
+          "repos_url": {
+            "displayOrder": 16,
+            "title": "Repos url",
+            "type": "string"
+          },
+          "events_url": {
+            "displayOrder": 17,
+            "title": "Events url",
+            "type": "string"
+          },
+          "received_events_url": {
+            "displayOrder": 18,
+            "title": "Received events url",
+            "type": "string"
+          },
+          "type1": {
+            "displayOrder": 19,
+            "title": "Type",
+            "type": "string"
+          },
+          "site_admin": {
+            "displayOrder": 20,
+            "title": "Site admin",
+            "type": "boolean"
+          },
+          "starred_at": {
+            "displayOrder": 21,
+            "title": "Starred at",
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "title": "Issue",
+    "additionalProperties": false
+  },
+  "type": "array",
+  "title": "Issue"
+}
