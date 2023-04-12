@@ -5,6 +5,6 @@
     <applicationVersion>v1</applicationVersion>
     <authenticationMethod>BASIC</authenticationMethod>
     <credentialName>CompletePolicyProjectGitHub_GitHub1</credentialName>
-    <endpointUrl>&lt;endpointurl value&gt;</endpointUrl>
+    <endpointUrl>REPLACE_WITH_YOUR_ENDPOINT_URL</endpointUrl>
   </policy>
 </policies>
